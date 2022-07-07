@@ -2,11 +2,123 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f73266baab.js" crossorigin="anonymous"></script>
+    <title>ohmyfood</title>
 </head>
 <body>
-    <h1>ohmyfood</h1>
+    <!--prevu pour le loading spinner-->
+    <div class="bloc">
+    </div>
+      <!--début du header-->
+    <header>
+        <div class="header">
+            <h1>
+                <img src="images/logo/ohmyfood.png" alt="ohmyfood"/>  
+            </h1>
+        </div>   
+    </header>
+    <div class="subheader">
+        <div class="subheader_icongps">
+            <i class="fas fa-map-marker-alt iconGPS"></i>
+        </div>
+        <div class="subheader_content">
+            <a href="#">Paris, Belleville</a> 
+        </div>
+    </div>
+<main>
+    <div class="flex">
+        <section class="section_location">
+            <h2>Réservez le menu qui vous convient</h2>
+            <h3>Découvrez des restaurants d'exception, séléctionnés par nos soins.</h3>
+            <button class="btn">Explorez nos restaurants</button>
+        </section>
+        <section class="fonctionnement">
+            <h2>Fonctionnement</h2>
+            <div class="section_steps_btn">
+                <div class="section_steps_btn_ordered">
+                    <p>1</p>
+                </div>
+                <span>
+                    <i class="fas fa-mobile-alt"></i>&nbsp;Choisissez votre
+                    restaurant
+                </span>
+            </div>
+            <div class="section_steps_btn">
+                <div class="section_steps_btn_ordered">
+                    <p>2</p>
+                </div>
+                <span>
+                    <i class="fas fa-list ul"></i>&nbsp;Composez votre menu
+                </span>
+            </div>
+            <div class="section_steps_btn">
+                <div class="section_steps_btn_ordered">
+                    <p>3</p>
+                </div>
+                <span>
+                    <i class="fas fa-store"></i>&nbsp;Dégustez au restaurant
+                </span>
+            </div>
+        </section>
+    </div>
+    <article class="section_restaurant">
+        <h2 class="restaurant_title">Restaurants</h2>
+            <div class="section_restaurant_cards">
+                <article class="section_restaurant_cards cards"></article>
+                    <a href="restaurant/palette.html"></a>
+                        <div class="section_restaurant_card_img">
+                            <div class="section_restaurant_card_img_new">
+                                <p>Nouveau</p>
+                                <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash" alt="La palette du goût">
+                            </div>
+                        </div>
+                        <div class="section_restaurant_cards_caption">
+                            <div class="section_restaurant_cards_caption_text">
+                                <h4>La palette du goût</h4>
+                                <p>Ménilmontant</p>
+                            </div>
+                            <div class="section_restaurant_card_heart">
+                                <p>
+                                    <span class="fa-stack">
+                                        <i class="far hrt-empty fa-heart fa-stack-1x"></i>
+                                        <i class="fas fa-heart fa-stack-1x"></i>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+    </section>
+
+
+    
+
+
+
+      
+</main>
+    <footer>
+
+
+    </footer>
+
+
+
+
+
+
+
+    </main>
+    
 </body>
 </html>
