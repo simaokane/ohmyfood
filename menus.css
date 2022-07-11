@@ -1,0 +1,167 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+ }
+html a{
+    text-decoration: none;
+}
+html h1 {
+    font-family: "Shrikhand";
+    font-size: 28px;
+    font-weight: 500;
+}
+html h3 {
+    font-size: 18px;
+    margin: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+main.main {
+    background-color: #f5f4f4;
+}
+ header{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 10px black;
+}
+.header_logo{
+    text-align: center;
+    width: 200px;
+    display: block;
+    margin: auto;
+    padding: 15px;
+}
+a.header_arrow {
+    font-size: 30px;
+    margin-left: 30px;
+    position: absolute;
+}
+.image_palette img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.nom_restaurant{
+    background-color: #f5f4f4;
+    margin-top: -40px;
+    border-radius: 35px 35px 0 0;
+    position: relative;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+}
+.bloc_menu{
+    width: 100%;
+    margin-bottom: 1%;
+    background-color: #f5f4f4;
+    padding: 20px;
+}
+.bloc_menu h2{
+    font-size: 18px;
+}
+.carte {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.carte_plat1.plat1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    /*max-width: 680px;*/
+    height: 70px;
+    margin: 10px 0 10px 0;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 5px 15px 2px #d6d6d6;
+    animation: menuanimation 1.5s both;
+}
+.carte_plat1.plat1,.carte_plat1.plat2,.carte_plat1.plat3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    /*max-width: 680px;*/
+    height: 70px;
+    margin: 10px 0 10px 0;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 5px 15px 2px #d6d6d6;
+    animation: menuanimation 1.5s both;
+}
+.carte_plat_texte{
+width: 85%;
+padding: 5px 0 5px 10px;
+font-size: 14px;
+margin: 5px;
+overflow: hidden;
+white-space: nowrap;
+display: flex;
+flex-direction: column;
+}
+.carte_plat_texte p{
+    font-size: 16px;
+    margin: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.carte_plat_prix{
+    width: 15%;
+    font-weight: bold;
+}
+.carte_plat_prix p{
+    text-align: right;
+    margin: 32px 15px 0 0;
+}
+.btn_validation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn_valide{
+    width: 200px;
+    height: 40px;
+    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    color: #ffffff;
+    border-radius: 20px;
+    margin: 15px 0 30px 0;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+}
+.btn_valide:hover{
+    background-color: #acabab;
+    box-shadow: 8px 8px 2px #acabab;
+}
+
+.footer{
+    background-color: #353535;
+    color: white;
+    padding: 10px;
+    margin-top: 0;
+ }
+ footer a{
+    text-decoration: none;
+    color: white;
+ }
+ footer h5{
+    margin-bottom: 20px;
+ }
+ footer p{
+    margin: 5px;
+ }
