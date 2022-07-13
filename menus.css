@@ -8,12 +8,12 @@ html a{
 }
 html h1 {
     font-family: "Shrikhand";
-    font-size: 28px;
+    font-size: 20px;
     font-weight: 500;
 }
 html h3 {
     font-size: 18px;
-    margin: 5px;
+    margin: 0px;
     overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -53,18 +53,61 @@ a.header_arrow {
     align-items: center;
     justify-content: center;
 }
+h1{
+    margin-right: 50px;
+}
+i.far.fa-heart {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 27px;
+    width: 27px;
+    cursor: pointer;
+    transition: all 1s;
+    z-index: 0;
+    /*background-clip: text;
+    -webkit-background-clip: text;*/
+}
+.fa-solid.fa-heart {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 27px;
+    width: 27px;
+    height: 0px;
+    cursor: pointer;
+    background: linear-gradient(0deg, #9356DC, #FF79DA);
+    color: transparent;
+    transition: all 0.5s;
+    z-index: 1;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
 .wrapper{
     display: flex;
-    justify-content: center;
+    /*justify-content: center;*/
+    flex-direction: column; 
 }
 .bloc_menu{
     width: 100%;
     margin-bottom: 1%;
     background-color: #f5f4f4;
-    padding: 20px;
+    padding: 30px;
 }
 .bloc_menu h2{
     font-size: 18px;
+}
+
+.bloc_menu h2::after{
+    content: ".";
+    display: block;
+    border-bottom: 4px solid #99e2d0;
+    width: 45px;
+    margin-top: 5px;
+    font-size: 0px;
 }
 .carte {
     display: flex;
@@ -114,7 +157,7 @@ flex-direction: column;
 }
 .carte_plat_texte p{
     font-size: 16px;
-    margin: 5px;
+    margin: 0px;
     overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -126,6 +169,29 @@ flex-direction: column;
     text-align: right;
     margin: 32px 15px 0 0;
 }
+.carte_plat_animation {
+    width: 0px;
+    overflow: hidden;
+    height: 100%;
+    background-color: #99e2d0;
+    color: #ffffff;
+    font-size: 24px;
+    border-radius: 0 15px 15px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s;
+}
+
+.carte_plat1:hover .carte_plat_animation{
+    width: 30%;
+}
+.carte_plat1.plat1:hover.fa-solid:hover{
+    transform: rotateZ(-360deg);
+    transition: 0.3s;
+}
+
 .btn_validation{
     display: flex;
     justify-content: center;
@@ -165,3 +231,34 @@ flex-direction: column;
  footer p{
     margin: 5px;
  }
+
+ @media screen and (min-width: 992px){
+    .operations{
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+    .cartes_menu{
+      width: 40%;
+    }
+    .wrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        animation-duration: 2s;
+        animation-name: wrapper;
+    }
+    @keyframes wrapper {
+        from {
+          margin-left: 100%;
+          width: 300%;
+        }
+      
+        to {
+          margin-left: 0%;
+          width: 100%;
+        }
+      }
+   
+    
+   }
