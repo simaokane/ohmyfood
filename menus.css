@@ -56,7 +56,7 @@ a.header_arrow {
 h1{
     margin-right: 50px;
 }
-i.far.fa-heart {
+.far.fa-heart{
     position: relative;
     display: flex;
     align-items: center;
@@ -65,10 +65,9 @@ i.far.fa-heart {
     width: 27px;
     cursor: pointer;
     transition: all 1s;
-    z-index: 0;
-    /*background-clip: text;
-    -webkit-background-clip: text;*/
+    z-index: 0;  
 }
+
 .fa-solid.fa-heart {
     position: absolute;
     display: flex;
@@ -84,6 +83,16 @@ i.far.fa-heart {
     z-index: 1;
     -webkit-background-clip: text;
     background-clip: text;
+}
+.far.fa-heart:hover{
+    background: linear-gradient(0deg, #9356DC, #FF79DA);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.far.fa-heart:hover .fa-solid.fa-heart{
+    width: 27px;
+    height: 27px;
 }
 
 .wrapper{
