@@ -256,6 +256,7 @@ flex-direction: column;
         width: 100%;
         animation-duration: 2s;
         animation-name: wrapper;
+        margin-left: 20px;
     }
     @keyframes wrapper {
         from {
