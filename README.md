@@ -15,8 +15,8 @@ Vous pouvez retrouver le [brief complet ici](https://s3.eu-west-1.amazonaws.com/
 -------------------------------
 ### Pages à intégrer selon les maquettes
     
-    - **Page d’accueil**
-    - **Pages de menu (x4)**
+ 1. Page d’accueil  
+ 2. Pages de menu (x4)
 
 ### Animation
 
