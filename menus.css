@@ -155,7 +155,8 @@ h1{
     background-color: #ffffff;
     border-radius: 20px;
     box-shadow: 0px 5px 15px 2px #d6d6d6;
-    animation: menuanimation 1.5s both;
+    animation: menuanimation 1.4s both;
+    opacity: 0.5;
 }
 .carte_plat_texte{
 width: 85%;
@@ -270,7 +271,17 @@ flex-direction: column;
         margin-left: 20px;
         box-sizing: border-box;
     }
-    @keyframes wrapper {
+    @keyframes menuanimation{
+        0% {
+            transform: translateY(20px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0px);
+            opacity: 1;
+        }
+    }
+    /*@keyframes wrapper {
         from {
           margin-left: 100%;
           width: 300%;
@@ -280,7 +291,8 @@ flex-direction: column;
           margin-left: 0%;
           width: 100%;
         }
-      }
+      }*/
+
    
     
    }
