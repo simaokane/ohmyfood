@@ -3,7 +3,7 @@
    margin: 0;
    padding: 0;
 }
-    
+
 html a{
    text-decoration: none;
    color: black;
@@ -16,6 +16,8 @@ margin: 5px;
 body{
    font-family: Roboto, sans-serif;
 }
+
+/*logo du header*/
 
 .header_logo{
    font-family: Shrikhand,"cursive";
@@ -67,6 +69,7 @@ i.fa-map-marker-alt.fas.local__icon {
 .btn_presentation:hover{
    background-color: #acabab;
    box-shadow: 8px 8px 2px #acabab;
+   opacity: 0.8;
 }
 .fonctionnement{
    padding: 20px 30px;
@@ -263,7 +266,54 @@ footer p{
  }
  .cartes_menu{
    width: 40%;
- }
+ } 
+}
+.spinner{
+   position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: hsla(0,0%,100%,.9);
+    animation: loader .01s;
+    animation-delay: 1.75s;
+    animation-fill-mode:none;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-fill-mode: forwards;
+}
 
- 
+.spinner::before,
+.spinner::after{
+   border-radius: -250px;
+   content: '';
+   position: absolute;
+   width: 30%;
+   height: 20%;
+   animation: spinner-skin 2s infinite linear;
+   background: #474bff;
+   border-radius: 50%;
+}
+
+.spinner::before{
+   border-radius: -250px;
+   background: #dbdcef;
+}
+
+@keyframes spinner-skin {
+  0% {
+      transform: scale(1) rotate(0deg) translateY(calc(var(border-radius) * 0.50%));   }
+
+   50% {
+      transform: scale(0.5) rotate(1440deg) translateY(0);
+   }
+
+   99% {
+      transform: scale(1) rotate(2920deg) translateY(calc(var(border-radius) * 0.50%));
+   }
+   100% {
+      display: none;   
+   }
 }
