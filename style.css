@@ -3,7 +3,9 @@
    margin: 0;
    padding: 0;
 }
-
+html h1{
+   font-family: Shrikhand,"cursive";
+}
 html a{
    text-decoration: none;
    color: black;
@@ -42,15 +44,16 @@ i.fa-map-marker-alt.fas.local__icon {
    font-weight: 700;
 }
 .section_presentation{
-   padding: 2rem;
+   padding: 1.5rem;
    text-align: center;
    background-color: #f5f4f4;
+   margin-bottom: 40px;
 }
 .titre_presentation{
    margin: 0;
 }
 .sous_titre_presentation{
-   font-weight: 300;
+   font-weight: 295;
    margin: 1.5rem 0;
 }
 .btn_presentation{
@@ -73,6 +76,7 @@ i.fa-map-marker-alt.fas.local__icon {
 }
 .fonctionnement{
    padding: 20px 30px;
+   margin-bottom: 30px;
 }
 a.type_operation {
    box-shadow: 10px 10px 10px rgb(5 5 5 / 25%);
@@ -81,8 +85,7 @@ a.type_operation {
 .operations{
    display: flex;
    flex-direction: column;
-   /*box-shadow: 10px 10px 10px rgb(5 5 5 / 25%);*/g
-}
+ }
 .type_operation{
    display: flex;
    align-items: center;
@@ -90,7 +93,6 @@ a.type_operation {
    background-color: #f6f6f6;
    height: 70px;
    text-decoration: none;
-   /*margin: 15px 20px 15px 20px;*/
 }
 .type_operation:hover{
    background-color: rgba(147, 86, 220, 0.2);
@@ -111,7 +113,7 @@ a.type_operation {
    font-size: 15px;
 }
 span.operation_content {
-   padding: 30px;
+   padding: 15px;
 }
 .Restaurants{
    background-color: #f5f4f4;
@@ -219,9 +221,10 @@ i.far.fa-heart{
 }
 .far:hover{
    background: linear-gradient(0deg, #9356DC, #FF79DA);
-   background-clip: text;
-   -webkit-background-clip: text;
    color: transparent;
+   -webkit-background-clip: text;
+   background-clip: text;
+   
  }
  .far:hover .fa-solid{
    width: 27px;
