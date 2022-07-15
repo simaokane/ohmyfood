@@ -81,7 +81,7 @@ a.type_operation {
 .operations{
    display: flex;
    flex-direction: column;
-   /*box-shadow: 10px 10px 10px rgb(5 5 5 / 25%);*/
+   /*box-shadow: 10px 10px 10px rgb(5 5 5 / 25%);*/g
 }
 .type_operation{
    display: flex;
@@ -267,7 +267,7 @@ footer p{
  .cartes_menu{
    width: 40%;
  } 
-.loader{
+/*.loader{
    position: fixed;
    height: 100%;
    width: 100%;
@@ -324,5 +324,5 @@ footer p{
    100%{
       transform: translateY(0);
    }
-}
+}*/
 }
