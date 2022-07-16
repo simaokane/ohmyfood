@@ -245,7 +245,7 @@ flex-direction: column;
     text-decoration: none;
     color: white;
  }
- footer h5{
+ footer h4{
     margin-bottom: 20px;
  }
  footer p{
@@ -286,17 +286,7 @@ flex-direction: column;
             opacity: 1;
         }
     }
-    /*@keyframes wrapper {
-        from {
-          margin-left: 100%;
-          width: 300%;
-        }
-      
-        to {
-          margin-left: 0%;
-          width: 100%;
-        }
-      }*/
+   
 
    
     
