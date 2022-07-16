@@ -21,18 +21,18 @@ body{
 }
 
 /*loading spinner*/
-.loader {
+.loader{
    display: flex;
    justify-content: center;
    align-items: center;
-   padding: 0 36rem;
-   background: #f2f2f2;
+   /* padding: 0 36rem; */
+   background-color:  #f2f2f2;
    position: fixed;
    font-size: 5rem;
    inset: 0;
    width: 100%;
    height: 100%;
-   opacity: 1;
+   /* opacity: 1; */
    animation: loader 3s forwards;
  }
  @keyframes loader {
@@ -46,8 +46,22 @@ body{
      opacity: 0;
    }
  }
- 
- .word {
+ @keyframes show_main {
+   0% {
+     opacity: 0;
+   }
+   100% {
+     opacity: 1;
+   }
+ }
+
+ main {
+   opacity: 0;
+   animation: show_main 3s forwards 3s;
+ }
+
+
+  .word {
    opacity: 0;
    font-family: "Shrikhand", sans-serif;
  }
@@ -71,28 +85,26 @@ body{
    }
    to {
      opacity: 1;
+     display: none;
    }
  }
- 
  .duree {
    position: absolute;
    width: 80px;
    height: 80px;
  }
- 
  .duree:after {
    content: ".";
-   font-size: 0;
+   font-size: 1.2em;
    display: block;
-   width: 64px;
-   height: 64px;
+   width: 70px;
+   height: 70px;
    margin: 8px;
    border-radius: 50%;
    border: 6px solid white;
    border-color: white transparent white transparent;
    animation: duree 1200ms 800ms linear forwards;
  }
- 
  @keyframes duree {
    from {
      transform: rotate(0deg);
@@ -103,21 +115,7 @@ body{
      opacity: 0;
    }
  }
- .gt {
-   opacity: 0;
-   animation: gt 4s forwards;
- }
- @keyframes gt {
-   0% {
-     opacity: 0;
-   }
-   99% {
-     opacity: 0;
-   }
-   100% {
-     opacity: 1;
-   }
- }
+ 
 /*logo du header*/
 .header_logo{
    font-family: Shrikhand,"cursive";
@@ -247,7 +245,6 @@ span.operation_content {
     background-size: cover;
     width: auto;
 }
-
 .carte_img img{
    width: 100%;
    height: 188px;
@@ -318,13 +315,11 @@ i.far.fa-heart{
    color: transparent;
    -webkit-background-clip: text;
    background-clip: text;
-   
  }
  .far:hover .fa-solid{
    width: 27px;
    height: 27px;
  }
-
 .nouveau{
     display: flex;
     align-items: center;
